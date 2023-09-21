@@ -58,6 +58,31 @@
             <artifactId>aws-java-sdk-sns</artifactId>
             <version>1.12.552</version>
         </dependency>
+
+        <!-- Dependência necessária para o correto funcionamento do kafka -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.12.7.1</version>
+        </dependency>
+        <!-- Kafka -->
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka_2.13</artifactId>
+            <version>3.5.1</version>
+        </dependency>
+        <!-- Dependência necessária para que o Kafka possa imprimir mensagens de log -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>2.0.9</version>
+        </dependency>
+        <!-- Integra o Kafka ao ecossistema do Spring Boot-->
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka</artifactId>
+        </dependency>
+
     </dependencies>
 
     <build>

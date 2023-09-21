@@ -1,4 +1,4 @@
-package br.com.ada.entity;
+package br.com.ada.core.entity;
 
 public class CustomerFeedback {
     private String uuid;

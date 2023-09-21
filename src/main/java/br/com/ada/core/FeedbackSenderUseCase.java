@@ -1,6 +1,6 @@
 package br.com.ada.core;
 
-import br.com.ada.entity.CustomerFeedback;
+import br.com.ada.core.entity.CustomerFeedback;
 import org.springframework.stereotype.Service;
 
 /** O que a aplicação faz - casos de uso - regras de negócio **/

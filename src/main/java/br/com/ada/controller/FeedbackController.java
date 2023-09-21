@@ -1,7 +1,7 @@
 package br.com.ada.controller;
 
 import br.com.ada.application.FeedbackSenderService;
-import br.com.ada.entity.CustomerFeedback;
+import br.com.ada.core.entity.CustomerFeedback;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -34,7 +34,9 @@ public class FeedbackController {
         return 0;
     }
 
-    /** Considerando que a informação seja relacionada a todos os campos que compõe CustomerFeedback e que sejam referentes a todas as filas **/
+    /** Considerando que a informação seja relacionada a todos os campos que compõe CustomerFeedback e que sejam referentes a todas as filas
+     * Consirar também a info de cada fila separadamente.
+     * **/
     @GetMapping("/info")
     public CustomerFeedback[] getInfo(){
         //TO DO: recover the published CustomerFeedback from each possible queue.
